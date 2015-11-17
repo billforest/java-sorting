@@ -1,0 +1,15 @@
+// Sorts.java
+
+public class Sorts {
+  
+  // instance variables
+  public int[] array = new int[12];  
+  
+  // constructor
+  public Sorts() {
+    array = int[]{};
+  }
+  
+  // methods
+  
+} // END Sorts
