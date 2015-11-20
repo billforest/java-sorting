@@ -1,42 +1,38 @@
 // InsertionSort.java
 
 
-public class BubbleSort extends Sorts {
+public class InsertionSort extends Sorts {
   
   // instance variables
-  private int[] bubble = new int[12];
+  private int[] insertion = new int[12];
   private String name;
   
   // constructor
-  public BubbleSort() {
-    bubble = super.array;
-    name = "Bubble";
+  public InsertionSort() {
+    insertion = super.array;
+    name = "Insertion";
   }
   
   // methods
   public void sort() {
     // Timing: Best = 0(n); AVE/WORST = 0(n^2)
     
-    System.out.println( "Doing " + name + " Sort:" );
-    boolean continueLoop;
-    int count = 1;
-    do {
+    int itemToInsert, j;
+    boolean keepLooping;
+    // On nth pass, insert item n into correct position
+    
+    for( int n = 1; n < insertion.length; n++ ) {
       
-      System.out.print( "Step #" + count + " " );
-      printArray();
+      // Go backwards through the list, look for the slot to insert n
+      itemToInsert = insertion[n];
+      j = k-1;
+      keepLooping = true;
       
-      continueLoop = false;
-      for( int i = 0; i < bubble.length-1; i++ ) {
-        if( bubble[i] > bubble[i+1] ) {
-          super.swap( i, i+1 );
-          continueLoop = true;
-        }
+      while( (j>=0) && keepLopping ) {
+        
       }
-      
-      count++;
-      
-    } while( continueLoop );
+    }
     
   } // end sort()
   
-} // END BubbleSort
+} // END InsertionSort
