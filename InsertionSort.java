@@ -1,6 +1,5 @@
 // InsertionSort.java
 
-
 public class InsertionSort extends Sorts {
   
   // instance variables
