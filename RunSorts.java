@@ -37,9 +37,17 @@ public class RunSorts {
     System.out.println( "Unsorted: " + m );
     m.sort();
     System.out.println( "SORTED: " + m + "\n" );
+      
+    // Searching Methods
+    System.out.println( "\nDoing Linear Search: " );
+    System.out.println( "Index of 69 = " + m.linearSearch( 69 ) );
+    
+    System.out.println( "\nDoing Binary Search: " );
+    System.out.println( "Index of 65 = " + m.binarySearch( 65 ) );
+    
+    // System.out.println( "SORTED: " + m + "\n" );
     
     // Radix Sort???
-    
     
   } // end main method
   
